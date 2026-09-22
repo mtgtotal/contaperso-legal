@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Política de privacidad — ContaPerso</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f5f5;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #121212; color: #f0f0f0; }
+    .card { background: #1e1e1e !important; }
+    a { color: #81c995; }
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .updated { opacity: 0.65; font-size: 14px; margin: 0 0 28px; }
+  h2 { font-size: 18px; margin: 28px 0 8px; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin: 6px 0; }
+  a { color: #2e7d32; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Política de privacidad de ContaPerso</h1>
+      <p class="updated">Última actualización: 22 de septiembre de 2026</p>
+
+      <h2>1. Responsable del tratamiento</h2>
+      <p>ContaPerso es una aplicación de finanzas personales desarrollada y operada por Vicente Sánchez Gil (contacto: <a href="mailto:mtgtotal@gmail.com">mtgtotal@gmail.com</a>), en adelante "el responsable".</p>
+
+      <h2>2. Qué datos se recogen</h2>
+      <p>ContaPerso solo recoge los datos estrictamente necesarios para prestar el servicio de gestión de finanzas personales:</p>
+      <ul>
+        <li><strong>Datos de cuenta</strong>: correo electrónico y contraseña (gestionados de forma segura por Supabase Auth; ContaPerso nunca almacena la contraseña en texto plano), y opcionalmente nombre y moneda por defecto.</li>
+        <li><strong>Datos financieros introducidos por el usuario</strong>: cuentas, transacciones, categorías, presupuestos y metas de ahorro que el propio usuario da de alta en la app. ContaPerso no se conecta a bancos ni obtiene estos datos de ningún tercero: todo lo introduce el usuario manualmente.</li>
+        <li><strong>Datos técnicos mínimos</strong>: los necesarios para el funcionamiento de la sesión (tokens de autenticación) y, si el dispositivo lo requiere, el estado de conexión a internet para mostrar el aviso de "sin conexión".</li>
+        <li><strong>Foto de recibo (opcional, función PRO)</strong>: si el usuario adjunta una foto a una transacción, esa imagen se sube a un almacenamiento privado asociado a su cuenta. No se accede a la cámara ni a la galería salvo que el propio usuario elija adjuntar una foto.</li>
+        <li><strong>Identificador de publicidad</strong>: en el plan gratuito, ContaPerso muestra anuncios a través de Google AdMob, que recoge el ID de publicidad del dispositivo para mostrar y medir esos anuncios. Este dato se comparte con Google, no con ningún otro tercero. El usuario PRO no ve anuncios y este dato deja de recogerse.</li>
+        <li><strong>Compras dentro de la app</strong>: la suscripción PRO se gestiona a través de Google Play Billing. ContaPerso no recibe ni almacena datos de tarjetas de pago; solo recibe de Google la confirmación de si la suscripción está activa.</li>
+      </ul>
+      <p>ContaPerso <strong>no</strong> recoge datos de geolocalización ni de contactos, y no accede al micrófono.</p>
+
+      <h2>3. Con qué finalidad se tratan los datos</h2>
+      <ul>
+        <li>Permitir el registro y la autenticación del usuario.</li>
+        <li>Guardar y mostrar sus cuentas, transacciones, presupuestos, metas de ahorro e informes, sincronizados entre sus propios dispositivos.</li>
+        <li>Aplicar el bloqueo opcional de la app por PIN/biometría del dispositivo, si el usuario lo activa (este dato — si el bloqueo está activado o no — se guarda únicamente en el propio dispositivo, no en el servidor).</li>
+        <li>Atender solicitudes de ejercicio de derechos (acceso, exportación, eliminación).</li>
+      </ul>
+      <p>No se usan los datos con fines de perfilado publicitario ni se venden ni ceden a terceros con fines comerciales.</p>
+
+      <h2>4. Base legal</h2>
+      <ul>
+        <li>La <strong>ejecución del servicio</strong> que el usuario solicita al registrarse y usar la app (art. 6.1.b RGPD).</li>
+        <li>El <strong>consentimiento</strong> del usuario al crear la cuenta y aceptar esta política.</li>
+      </ul>
+
+      <h2>5. Encargados del tratamiento (proveedores)</h2>
+      <ul>
+        <li><strong>Supabase</strong> (base de datos, autenticación y almacenamiento), que actúa como encargado del tratamiento. Supabase aplica cifrado en tránsito (HTTPS) y en reposo, y la app usa reglas de seguridad a nivel de fila (Row Level Security) para que cada usuario solo pueda acceder a sus propios datos.</li>
+        <li><strong>Google AdMob</strong> (plan gratuito), para mostrar anuncios. Recoge el ID de publicidad del dispositivo; más información en la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>.</li>
+        <li><strong>Google Play Billing</strong>, para procesar el pago de la suscripción PRO. ContaPerso nunca recibe los datos de la tarjeta del usuario.</li>
+      </ul>
+
+      <h2>6. Conservación de los datos</h2>
+      <p>Los datos se conservan mientras el usuario mantenga su cuenta activa. Si el usuario elimina su cuenta desde Perfil → "Eliminar cuenta", todos sus datos (cuentas, transacciones, categorías propias, presupuestos, metas de ahorro y fotos de recibo) se borran de forma permanente e irreversible. Ver también la <a href="eliminar-cuenta.html">página de eliminación de cuenta</a>.</p>
+
+      <h2>7. Derechos del usuario (RGPD)</h2>
+      <p>El usuario puede, en cualquier momento y directamente desde la app:</p>
+      <ul>
+        <li><strong>Acceder y rectificar</strong> sus datos de perfil (nombre, moneda) desde Perfil.</li>
+        <li><strong>Exportar</strong> una copia completa de sus datos personales en formato JSON desde Perfil → "Exportar mis datos (JSON)" (derecho de portabilidad).</li>
+        <li><strong>Eliminar</strong> su cuenta y todos sus datos desde Perfil → "Eliminar cuenta" (derecho de supresión).</li>
+      </ul>
+      <p>Para cualquier otra solicitud relacionada con sus datos (oposición, limitación del tratamiento, o dudas), el usuario puede escribir a <a href="mailto:mtgtotal@gmail.com">mtgtotal@gmail.com</a>.</p>
+      <p>Si el usuario considera que el tratamiento de sus datos no se ajusta a la normativa, también tiene derecho a reclamar ante la autoridad de control competente (en España, la Agencia Española de Protección de Datos, <a href="https://www.aepd.es">www.aepd.es</a>).</p>
+
+      <h2>8. Seguridad</h2>
+      <p>Se aplican medidas técnicas razonables para proteger los datos: comunicación cifrada mediante HTTPS en todas las llamadas al servidor, aislamiento de los datos de cada usuario mediante reglas de seguridad a nivel de fila en la base de datos, y bloqueo opcional de la app con el PIN o la biometría del propio dispositivo.</p>
+
+      <h2>9. Menores de edad</h2>
+      <p>ContaPerso no está dirigida a menores de 14 años y no recoge conscientemente datos de menores de esa edad.</p>
+
+      <h2>10. Cambios en esta política</h2>
+      <p>Esta política puede actualizarse para reflejar cambios en la app o en la normativa aplicable. Se indicará la fecha de la última actualización al principio del documento.</p>
+
+      <h2>11. Contacto</h2>
+      <p>Para cualquier consulta sobre esta política o sobre el tratamiento de tus datos: <a href="mailto:mtgtotal@gmail.com">mtgtotal@gmail.com</a>.</p>
+    </div>
+  </div>
+</body>
+</html>
